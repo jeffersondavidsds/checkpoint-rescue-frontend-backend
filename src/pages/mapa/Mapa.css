@@ -1,0 +1,215 @@
+.mapa-page {
+  min-height: calc(100vh - 80px);
+  padding: 3rem 0;
+  background: linear-gradient(180deg, #f5f9f1 0%, #f3f7f2 45%, #ffffff 100%);
+}
+
+.mapa-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 80px);
+  gap: 1rem;
+}
+
+.mapa-intro {
+  margin-bottom: 2rem;
+}
+
+.mapa-header-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: var(--radius-3xl);
+  padding: 2.25rem;
+  box-shadow: 0 28px 60px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.mapa-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.mapa-header h1 {
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  margin-bottom: 0.5rem;
+}
+
+.mapa-header p {
+  color: var(--gray-600);
+  font-size: 1.1rem;
+}
+
+.mapa-filters {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  border: 2px solid var(--gray-200);
+  background: var(--white);
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  color: var(--gray-700);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.filter-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.filter-btn.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--white);
+}
+
+.stats-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.summary-card {
+  background: var(--white);
+  padding: 1.75rem;
+  border-radius: var(--radius-2xl);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.summary-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--gray-900);
+}
+
+.summary-label {
+  color: var(--gray-600);
+  font-size: 0.875rem;
+}
+
+.localizacoes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.local-card {
+  background: var(--white);
+  padding: 1.75rem;
+  border-radius: var(--radius-2xl);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+  transition: var(--transition);
+}
+
+.local-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.local-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.local-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.local-status {
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.local-nome {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: var(--gray-900);
+}
+
+.local-endereco {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--gray-600);
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+
+.local-descricao {
+  color: var(--gray-700);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.local-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  color: var(--gray-600);
+  padding-top: 1rem;
+  border-top: 1px solid var(--gray-200);
+}
+
+.local-solicitante {
+  font-size: 0.875rem;
+  color: var(--gray-600);
+  font-weight: 600;
+}
+
+.empty-mapa {
+  background: var(--white);
+  padding: 4rem 2rem;
+  border-radius: var(--radius-xl);
+  text-align: center;
+  box-shadow: var(--shadow);
+  margin-top: 2rem;
+}
+
+.empty-mapa p {
+  margin-top: 1rem;
+  color: var(--gray-600);
+  font-size: 1.125rem;
+}
+
+@media (max-width: 768px) {
+  .mapa-page {
+    padding: 2rem 0;
+  }
+  .mapa-header h1 {
+    font-size: 1.75rem;
+  }
+  .localizacoes-grid {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=Mapa.css.map */
