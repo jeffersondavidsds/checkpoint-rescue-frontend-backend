@@ -2,28 +2,6 @@
 
 ## ✅ Status da Integração
 
-### Arquivos Mantidos (Estilo Verde Original)
-- ✅ App.jsx
-- ✅ main.jsx
-- ✅ Header.jsx + Header.scss + Header.css
-- ✅ AuthContext.jsx
-- ✅ api.js
-- ✅ global.scss + global.css
-- ✅ Login.jsx
-- ✅ Registro.jsx
-- ✅ Auth.scss (criado baseado no estilo)
-- ✅ Logo (logocheck.png como logo.png)
-
-### Arquivos Adicionados (Segurança)
-- ✅ .gitignore - Protege dados sensíveis
-- ✅ .env.example - Template de variáveis de ambiente
-
-### Aguardando
-- ⏳ Home.jsx (src/pages/home/)
-- ⏳ Dashboard.jsx (src/pages/dashboard/)
-- ⏳ Mapa.jsx (src/pages/mapa/)
-- ⏳ Sobre.jsx (src/pages/sobre/)
-
 ---
 
 ## 🔗 Integração com Backend
